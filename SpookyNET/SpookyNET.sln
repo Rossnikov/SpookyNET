@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpookyCMD", "SpookyCMD\Spoo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpookyCORE", "SpookyCORE\SpookyCORE.csproj", "{9BC19E2B-A526-48BD-AB02-36450F148E9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpookyDISC", "SpookyDISC\SpookyDISC.csproj", "{B505DE9D-F50E-43D8-852E-EA698BC75F8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{9BC19E2B-A526-48BD-AB02-36450F148E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BC19E2B-A526-48BD-AB02-36450F148E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BC19E2B-A526-48BD-AB02-36450F148E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B505DE9D-F50E-43D8-852E-EA698BC75F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B505DE9D-F50E-43D8-852E-EA698BC75F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B505DE9D-F50E-43D8-852E-EA698BC75F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B505DE9D-F50E-43D8-852E-EA698BC75F8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

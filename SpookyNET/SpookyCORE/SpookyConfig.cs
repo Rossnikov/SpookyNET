@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SpookyCMD
+namespace SpookyCORE
 {
-    public class SpookyCMDConfig
+    public class SpookyConfig
     {
         private string namesFileName;
         private string lastNamePrefixesFileName;
@@ -70,17 +70,17 @@ namespace SpookyCMD
             set { chanceNickname = value; }
         }
 
-        public static SpookyCMDConfig ParseConfig(string jsonConfigFile)
+        public static SpookyConfig ParseConfig(string jsonConfigFile)
         {
             string config = System.IO.File.ReadAllText(jsonConfigFile);
-            var configData = (SpookyCMDConfig)Newtonsoft.Json.JsonConvert.DeserializeObject(config, typeof(SpookyCMDConfig));
+            var configData = (SpookyConfig)Newtonsoft.Json.JsonConvert.DeserializeObject(config, typeof(SpookyConfig));
 
             return configData;
         }
 
         public static void WriteGenericConfig(string jsonConfigFile)
         {
-            SpookyCMDConfig spook = new SpookyCMDConfig();
+            SpookyConfig spook = new SpookyConfig();
             spook.namesFileName = "names.txt";
             spook.lastNamePrefixesFileName = "lastNamePrefixes.txt";
             spook.lastNameSuffixesFileName = "lastNameSuffixes.txt";

@@ -1,12 +1,14 @@
-﻿using System;
+﻿using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
 
-namespace SpookyCMD
+namespace SpookyDISC.Services
 {
-    class SpookyCMD
+    public class SpookyService
     {
         SpookyCORE.SpookyCharacterGen charGen;
 
-        public SpookyCMD(string assetPath, string configName)
+        public SpookyService(string assetPath, string configName)
         {
             string configPath = assetPath + "\\" + configName;
 
@@ -32,22 +34,10 @@ namespace SpookyCMD
             charGen.Pranks = new SpookyCORE.SpookyStringData(pranksFilePath);
         }
 
-        public string GenerateCharacterData()
+        public string GetSpookyDescription()
         {
             var character = charGen.GenerateCharacter();
             return character.GetCharacterDescription();
-        }
-
-        static void Main(string[] args)
-        {
-            SpookyCMD cmd = new SpookyCMD("assets", "config.json");
-
-            while(true)
-            {
-                var printThisSpooker = cmd.GenerateCharacterData();
-                Console.WriteLine(printThisSpooker);
-                Console.ReadKey();
-            }
         }
     }
 }
