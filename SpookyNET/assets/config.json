@@ -1,0 +1,11 @@
+{
+  "NamesPath": "names.txt",
+  "LastNamesPrefixesPath": "prefixes.txt",
+  "LastNamesSuffixesPath": "suffixes.txt",
+  "BirthplacesPath": "birthplaces.txt",
+  "PowersPath": "powers.txt",
+  "PranksPath": "pranks.txt",
+  "ChanceToAddPrefix": 0.15,
+  "ChanceToAddSuffix": 0.15,
+  "ChanceToAddNickname": 0.35
+}
